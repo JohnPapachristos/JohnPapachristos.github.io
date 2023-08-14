@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+        <link rel="shortcut icon" href="../images/Header.png" type="image/png">
+		<title>Fit and Healthy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script src="../assets/js/calculateCalories.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Fit and Healthy</h1>
+						<p>Είναι μια δωρεάν εφαρμογή που θα σε βοηθήσει να μετρήσεις τις θερμίδες σου και θα σου δημιουργήσει ένα πρόγραμμα γυμναστικής.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Fit and Healthy</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Βρες τις θερμιδες σου</a></li>
+							<li><a href="generic.html">Πρόγραμμα γυμναστικης</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/JohnPapachristos" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="../index.html"><span class="label">EN</span></a></li>
+							<li><a href="https://johnpapachristos.github.io/portfolio/">Portoflio</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+						<article class="post featured">
+							<header class="major">
+								<span class="date">Υπολογισμός θερμιδών</span>
+								<form action="/action_page.php">
+									<label for="fage">Ηλικια:</label>
+									<input type="text" id="fage" name="fage" required><br>
+									<label for="fgender">Φυλο:</label>
+									<input type="radio" id="male" name="gender" value="male">
+								    <label for="male">Αρρεν</label><br>
+								    <input type="radio" id="female" name="gender" value="female" checked="checked">
+								    <label for="female">Θηλυ</label><br><br>
+									<label for="lheight">Υψος(cm):</label>
+									<input type="text" id="lheight" name="lheight" required><br>
+									<label for="lweight">Σωματικο βαρος(kg):</label>
+									<input type="text" id="lweight" name="lweight" required><br>
+									<label for="factivity">Δραστηριοτητα:</label>
+									<input type="radio" id="small" name="activity" value="1.2">
+								    <label for="small">Λίγο ή καθόλου άσκηση</label><br>
+								    <input type="radio" id="medium" name="activity" value="1.375" checked="checked">
+								    <label for="medium">Άσκηση 1-3 φορές την εβδομάδα</label><br>
+									<input type="radio" id="high" name="activity" value="1.9">
+								    <label for="high">Άσκηση 5-7 φορές την εβδομάδα</label><br><br><br>
+                                    <button type="button" onclick="calculateCalories('GR');">Υπολογισμός</button>
+									<input type="reset" value="Καθαρισμος πεδιων">
+								  </form>
+							</header>
+                            </article>
+
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Αποτέλεσμα:</span>
+									<label for="result" id="result"></label><br>
+								</header>
+							</article>	
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/calculateCalories.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
